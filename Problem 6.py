@@ -10,7 +10,7 @@ def problem6():
         n = raw_input("What is n? ")
         try:
             n = int(n)
-            if n > 2:
+            if n > 1:
                 square_of_sum = (((n + 1) * n) / 2) ** 2
                 sum_of_square = sum(map(lambda x: x ** 2, range(0, n+1)))
                 print "Answer is %i" % (square_of_sum - sum_of_square)
