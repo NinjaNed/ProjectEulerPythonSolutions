@@ -15,27 +15,30 @@ def primes_up_to(n):
 
     return [2]+[i for i in range(3, n, 2) if sieve[i]]
 
-print("Find the largest prime factor of a given number")
 
-while True:
-    num = raw_input("What Number? ")
-    try:
-        num = int(num)
-        if num > 0:
-            primes = primes_up_to(int(num ** .5) + 1)
-            primes.reverse()
-            found_flag = False
-            for prime in primes:
-                if num % prime == 0:
-                    print("Answer = %i" % prime)
-                    found_flag = True
-                    break
-            if not found_flag:
-                "Answer = 1"
-            break
-        else:
-            print "*** Upper bound must be positive. ***"
-    except ValueError:
-        print "*** %s is not a valid integer. ***" % num
+def problem3():
+    print("Find the largest prime factor of a given number")
 
+    while True:
+        num = raw_input("What Number? ")
+        try:
+            num = int(num)
+            if num > 0:
+                primes = primes_up_to(int(num ** .5) + 1)
+                primes.reverse()
+                found_flag = False
+                for prime in primes:
+                    if num % prime == 0:
+                        print("Answer = %i" % prime)
+                        found_flag = True
+                        break
+                if not found_flag:
+                    "Answer = 1"
+                break
+            else:
+                print "*** Upper bound must be positive. ***"
+        except ValueError:
+            print "*** %s is not a valid integer. ***" % num
+
+problem3()
 
