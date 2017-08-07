@@ -13,6 +13,6 @@ while True:
             print("Answer = %i" % sum(valid_nums))
             break
         else:
-            print "Upper bound must be positive."
+            print "*** Upper bound must be positive ***"
     except ValueError:
-        print "%s is not a valid integer." % upper_bound
+        print "*** %s is not a valid integer ***" % upper_bound
