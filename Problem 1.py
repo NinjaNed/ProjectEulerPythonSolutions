@@ -15,4 +15,4 @@ while True:
         else:
             print "Upper bound must be positive."
     except ValueError:
-        print "%s is not a valid integer."
+        print "%s is not a valid integer." % upper_bound
