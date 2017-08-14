@@ -14,7 +14,6 @@ def problem7():
             n = int(n)
             if n < 1:
                 print "*** Upper bound must be a positive non-zero integer ***"
-
             else:
                 prime_list = [2, 3]
                 counter = 2
