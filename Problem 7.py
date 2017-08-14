@@ -5,6 +5,7 @@ __author__ = 'Ned Udomkesmalee'
 
 #Important facts: Primes > 3 will be of the form 6k +/- 1 and you only need to check for prime divisibility up to sqrt i
 
+
 def problem7():
     print("Find the nth prime number")
     while True:
