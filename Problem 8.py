@@ -37,7 +37,7 @@ def problem8():
             n = int(n)
             if n > 1:
                 len_num = len(num)
-                highest_product = 1
+                highest_product = 0
                 for index in range(len_num - n + 1):
                     test_product = 1
                     for i in range(n):
