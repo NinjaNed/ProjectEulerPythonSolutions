@@ -17,18 +17,18 @@ def primes_up_to(n):
 
 
 def problem3():
-    print("Find the largest prime factor of a given number")
+    print("Find the largest prime factor of n")
 
     while True:
-        num = raw_input("What Number? ")
+        n = raw_input("What is n? ")
         try:
-            num = int(num)
-            if num > 0:
-                primes = primes_up_to(int(num ** .5) + 1)
+            n = int(n)
+            if n > 0:
+                primes = primes_up_to(int(n ** .5) + 1)
                 primes.reverse()
                 found_flag = False
                 for prime in primes:
-                    if num % prime == 0:
+                    if n % prime == 0:
                         print("Answer = %i" % prime)
                         found_flag = True
                         break
@@ -36,9 +36,9 @@ def problem3():
                     "Answer = 1"
                 break
             else:
-                print "*** Upper bound must be positive. ***"
+                print "*** n must be positive. ***"
         except ValueError:
-            print "*** %s is not a valid integer. ***" % num
+            print "*** %s is not a valid integer. ***" % n
 
 problem3()
 

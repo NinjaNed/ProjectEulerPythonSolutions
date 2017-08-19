@@ -43,7 +43,7 @@ def problem5():
                     else:
                         product += list_divisors[-1]
             else:
-                print "*** Upper bound must be positive non-zero number. ***"
+                print "*** n must be positive non-zero number. ***"
         except ValueError:
             print "*** %s is not a valid integer. ***" % n
 

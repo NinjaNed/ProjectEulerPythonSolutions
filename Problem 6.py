@@ -18,7 +18,7 @@ def problem6():
             elif n == 0 or n == 1:
                 print "Answer is 0"
             else:
-                print "*** Upper bound must be positive ***"
+                print "*** n must be positive ***"
         except ValueError:
             print "*** %s is not a valid integer ***" % n
 

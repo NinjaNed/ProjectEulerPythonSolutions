@@ -51,7 +51,7 @@ def problem8():
                 print "Answer = %i" % highest_product
                 break
             else:
-                print "*** Upper bound must be a positive non-zero integer ***"
+                print "*** n must be a positive non-zero integer ***"
         except ValueError:
             print "*** %s is not a valid integer ***" % n
 

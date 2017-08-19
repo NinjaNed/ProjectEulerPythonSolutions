@@ -28,7 +28,7 @@ def problem10():
                 print "Answer = %i" % sum(primes)
                 break
             else:
-                print "*** Upper bound must be positive. ***"
+                print "*** n must be positive. ***"
         except ValueError:
             print "*** %s is not a valid integer. ***" % n
 
