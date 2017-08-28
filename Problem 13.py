@@ -139,6 +139,8 @@ def problem13():
                     partial_sum = 0
                 if remainder > 0:
                     sum_result = "".join([str(remainder), sum_result])
+                if n > len(sum_result):
+                    sum_result = "".join([("0" * (n-len(sum_result))), sum_result])
                 print "Answer is %s" % sum_result[:n]
                 break
             else:
